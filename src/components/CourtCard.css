@@ -1,0 +1,73 @@
+.card {
+  margin: 5px;
+  width: 292px;
+  height: 153px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Court-portal {
+  position: fixed;
+  left: 350px;
+  top: 11%;
+  right: 25%;
+  bottom: 10%;
+  max-height: 70vh;
+  z-index: 1000;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.Weekly {
+
+}
+
+.Chat-portal {
+  position: fixed;
+  width: 23%;
+  left: 76%;
+  top: 11%;
+  max-height: 90vh;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10001;
+  border-radius: 5px;
+}
+
+.Chat-history-box {
+  height: 40vh;
+  padding: 10px;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .Court-portal {
+    position: fixed;
+    margin: 1%;
+    width: 100%;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 170px;
+    /* z-index: 10001; */
+    overflow: auto;
+  }
+  .Chat-portal {
+    position: fixed;
+    margin: 1%;
+    width: 98%;
+    top: 10%;
+    left: 0%;
+    right: 0px;
+    bottom: 170px;
+    z-index: 10001;
+    overflow: auto;
+  }
+  .Chat-history-box {
+    height: 30vh;
+    bottom: 170px;
+    overflow: auto;
+  }
+}
